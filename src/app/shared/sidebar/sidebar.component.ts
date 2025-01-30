@@ -14,7 +14,7 @@ export class SidebarComponent {
   constructor(private router: Router) {}
 
   canActivate(): boolean {
-    this.router.navigate(['/auth/login']);
+    this.router.navigate(['/login']);
     return false;
   }
 }
