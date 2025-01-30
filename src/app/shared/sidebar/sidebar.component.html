@@ -1,13 +1,10 @@
-<mat-sidenav-container class="sidenav-container">
-    <mat-sidenav mode="side" opened class="sidenav">
-      <mat-nav-list>
-        <a mat-list-item routerLink="/users">ผู้ใช้งาน</a>
-        <a mat-list-item routerLink="/admins">แอดมิน</a>
-        <a mat-list-item routerLink="/products">สินค้า</a>
-      </mat-nav-list>
-    </mat-sidenav>
-    <mat-sidenav-content>
-      <router-outlet></router-outlet>
-    </mat-sidenav-content>
-  </mat-sidenav-container>
-  
+<aside class="sidebar">
+  <div class="sidebar-image-wrapper">
+    <img src="https://logo.com/image-cdn/images/kts928pd/production/6f1c54749cad1db6898eee759e698280b0cc80d3-393x389.png?w=1080&q=72&fm=webp" alt="Anime Warrior" class="sidebar-image">
+  </div>
+  <ul>
+    <li><a routerLink="/users">👤 Users</a></li>
+    <li><a routerLink="/admins">🔑 Admins</a></li>
+    <li><a routerLink="/products">🛒 Products</a></li>
+  </ul>
+</aside>

@@ -7,7 +7,7 @@ import { Config } from 'datatables.net';
 
 @Component({
   selector: 'app-user-list',
-  imports: [CommonModule, BrowserModule, DataTablesModule],
+  imports: [CommonModule, DataTablesModule],
   standalone: true,
   templateUrl: './user-list.component.html',
   styleUrl: './user-list.component.css'

@@ -1,8 +1,64 @@
-.sidenav-container {
-    height: 100vh;
-  }
-  
-  .sidenav {
-    width: 250px;
-  }
-  
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100vh;
+  background-color: #2d3e50;
+  color: #ffffff;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar-image-wrapper {
+  width: 70%; /* กำหนดความกว้างของภาพ */
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.sidebar-image {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  width: 100%; /* ปรับให้ ul ครอบเต็ม sidebar */
+}
+
+.sidebar li {
+  margin: 15px 0;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sidebar a:hover {
+  background-color: #1abc9c;
+  color: #ffffff;
+}
+
+.sidebar a.router-link-active {
+  background-color: #1abc9c;
+  font-weight: bold;
+}
+
+body {
+  margin-left: 250px;
+  background: #f4f7f9;
+}

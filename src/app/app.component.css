@@ -1,0 +1,30 @@
+/* Layout หลัก */
+.layout {
+    display: flex;
+    /* height: 100vh; */
+    transition: margin-left 0.3s ease;
+  }
+  
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100vh;
+    background-color: #2c3e50;
+    box-shadow: 4px 0 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  
+  .content {
+    margin-left: 250px;
+    padding: 20px;
+    flex-grow: 1;
+    transition: margin-left 0.3s ease;
+  }
+  
+  /* ถ้า Sidebar ปิด */
+  .layout:not(.sidebar-opened) .content {
+    margin-left: 0;
+  }
+  
